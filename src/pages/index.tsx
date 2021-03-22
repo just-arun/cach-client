@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
+import { Button } from '../components/ui/button.component';
 
 export default function Home() {
   const router = useRouter();
@@ -12,9 +13,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <button onClick={() => router.push("/products")}>
-          view products
-        </button>
+        <Button 
+        onClick={(_) => router.push('/products')}
+        >View Products</Button>
       </main>
 
       <footer className={styles.footer}>
