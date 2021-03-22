@@ -1,0 +1,16 @@
+.product-page {
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    &__item {
+        min-height: 300px;
+        border-radius: 6px;
+        transition: .3s;
+        padding: 20px;
+        border: 2px solid transparent;
+        &:hover {
+            border: 2px solid grey;
+        }
+    }
+}

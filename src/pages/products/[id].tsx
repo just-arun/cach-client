@@ -1,8 +1,5 @@
-
 const ProductIDPage = () => {
-    return (
-        <div></div>
-    )
-}
+  return <div></div>;
+};
 
 export default ProductIDPage;
