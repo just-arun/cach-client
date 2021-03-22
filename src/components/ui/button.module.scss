@@ -1,0 +1,15 @@
+@use "./../../styles/scss/colors";
+
+.button {
+    border: 1px solid grey;
+    background: invert(colors.$text-color);
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid colors.$primary;
+        background: colors.$primary;
+        color: invert(colors.$text-color);
+    }
+}
